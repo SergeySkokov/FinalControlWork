@@ -26,11 +26,7 @@ static void PrintResult(string[] printText, string[] printResult, int counter)
         {
             printResult[i] = printText[i];
             Console.Write(printResult[i]);
-
-            if (printResult[i].Length < counter - 1)
-            {
-                Console.Write(", ");
-            }
+            if (i + 1 != printResult.Length) Console.Write(", ");
             else Console.Write("]");
         }
     }
